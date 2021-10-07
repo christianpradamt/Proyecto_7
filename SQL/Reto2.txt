@@ -11,6 +11,7 @@ BEGIN
     DELETE FROM CLIENT WHERE ID = :id;
     :status_code := 204;
 END;
+SELECT FROM CLIENT WHERE id = :id;
 SELECT * FROM MESSAGE
 BEGIN
     INSERT INTO MESSAGE (ID, MESSAGETEXT) VALUES (:id, :messagetext);
@@ -24,3 +25,4 @@ BEGIN
     DELETE FROM MESSAGE WHERE ID = :id;
     :status_code := 204;
 END;
+SELECT FROM MESSAGE WHERE id = :id;
