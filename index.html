@@ -1,21 +1,45 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+  <script type="text/javascript" src="JS/client/consultar.js"></script>
+  <script type="text/javascript" src="JS/client/guardar.js"></script>
+  <script type="text/javascript" src="JS/client/eliminar.js"></script>
   <title>Reto 2</title>
 </head>
+
 <body>
   <div id="form-computer">
 
   </div>
+
+  <!-- COMIENZA EL FORMULARIO PARA REGISTRO DE CLIENTES -->
   <div id="form-client">
+    <h2>Registro de Clientes:</h2>
+    <br>
+    <h4>Registra un cliente</h4>
+    ID <input type="number" id="id"> <br/>
+    NAME <input type="text" id="name"> <br/>
+    EMAIL <input type="text" id="email"> <br/>
+    AGE <input type="number" id="age"> <br/>
+    <button onclick="guardarCliente()">Guardar</button>
+    <br>
+    <br>
+
+    <h4>Clientes Registrados:</h4>
+    <button onclick="consultarClientes()">Consultar Datos</button>
+    <div id="tabla"></div>
 
   </div>
+  <!-- TERMINA EL FORMULARIO PARA REGISTRO DE CLIENTES -->
+
   <div id="form-message">
 
   </div>
 </body>
+
 </html>
