@@ -9,13 +9,63 @@
 </head>
 <body>
   <div id="form-computer">
+    <h1>Computer</h1>
+    <h4>Register a Computer</h4>
+    <form>
+      <label for="id-com">Id: </label>
+      <input type="text" id="id-com" placeholder="number"><br>
+      <label for="brand-com">Brand: </label>
+      <input type="text" id="brand-com" placeholder="string"><br>
+      <label for="model-com">Model: </label>
+      <input type="text" id="model-com" placeholder="number"><br>
+      <label for="cat-id-com">Category Id: </label>
+      <input type="text" id="cat-id-com" placeholder="number"><br>
+      <label for="name-com">Name: </label>
+      <input type="text" id="name-com" placeholder="string"><br>
+      <button onclick="addDataComputer()">Add</button>
+    </form>
+    <h4>Computer Log</h4>
+    <button onclick="checkDataComputer()">Check</button>
+    <div id="tabla-com">
 
+    </div>
+    <hr>
   </div>
   <div id="form-client">
+    <h1>Clients</h1>
+    <h4>Register a Client</h4>
+    <form>
+      <label for="id-cli">Id: </label>
+      <input type="text" id="id-cli" placeholder="number"><br>
+      <label for="name-cli">Name: </label>
+      <input type="text" id="name-cli" placeholder="string"><br>
+      <label for="email-cli">Email: </label>
+      <input type="text" id="email-cli" placeholder="string"><br>
+      <label for="age-cli">Age: </label>
+      <input type="text" id="age-cli" placeholder="string"><br>
+      <button onclick="addDataClient()">Add</button>
+    </form>
+    <h4>Client Log</h4>
+    <button onclick="checkDataClient()">Check</button>
+    <div id="tabla-cli">
 
+    </div>
+    <hr>
   </div>
   <div id="form-message">
+    <h1>Message</h1>
+    <h4>Register a Message</h4>
+    <form>
+      <label for="id-msg">Id: </label>
+      <input type="text" id="id-msg" placeholder="number"><br>
+      <label for="message-msg">Message: </label><br>
+      <textarea id="message-msg" rows="10" cols="30"></textarea>
+    </form>
+    <h4>Message Log</h4>
+    <button onclick="addDataMessage()">Add</button>
+    <div id="tabla-msg">
 
+    </div>
   </div>
 </body>
 </html>
