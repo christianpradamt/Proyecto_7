@@ -1,0 +1,49 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/detalleComputador.js"></script>
+        <script type="text/javascript" src="js/actualizarComputador.js"></script>
+        <title>Detalle Computador</title>
+    </head>
+    <body>
+        <h1>Detalle del computador</h1>
+        <h4>Registra el dispositivo</h4>
+        <table border="1">
+            <tr>
+                <td>
+                ID <input type="number" id="id" disabled /> <br/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                Brand <input type="text" id="brand" /> <br/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                Model <input type="number" id="model" /> <br/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                Category_id <input type="text" id="category_id" /> <br/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                Name <input type="text" id="name" /> <br/>
+                </td>
+            </tr>
+        </table>
+        
+        <br>
+        <button id="boton" onclick="actualizar()">Actualizar computador</button>
+
+        <br/><br/><br/>
+        <a href="index.html">Ir al Inicio</a>
+    </body>
+</html>
