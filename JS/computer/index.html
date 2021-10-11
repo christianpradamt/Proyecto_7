@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script type="text/javascript" src="js/consultarComputador.js"></script>
+        <script type="text/javascript" src="js/guardarComputador.js"></script>
+        <script type="text/javascript" src="js/eliminarComputador.js"></script>
+        <title>Reto 2 Misión TIC USA</title>
+    </head>
+    <body>
+        <h1>Computadores</h1>
+
+        <h4>Registra el dispositivo</h4>
+        <table border="1">
+
+            <tr>
+                <td>
+                ID <input type="number" id="id" /> <br/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                Brand <input type="text" id="brand" /> <br/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                Model <input type="number" id="model" /> <br/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                Category_ID <input type="number" id="category_id" /> <br/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                Name <input type="text" id="name" /> <br/>
+                </td>
+            </tr>
+        </table>  
+        <br>
+        <button onclick="guardar()">Guardar</button>
+
+        <h4>Dispositivos Registrados</h4> 
+        <button onclick="consultar()">Consultar Datos</button>
+
+        <div id="tabla"> </div>
+    </body>
+</html>
