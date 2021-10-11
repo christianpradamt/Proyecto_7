@@ -2,7 +2,7 @@ function actualizar(){
     console.log("ejecutando funcion para actualizar");
 
     let computador = {
-        id: +$("#id").val(),
+        id: +$("#id_com").val(),
         brand: $("#brand").val(),
         model: +$("#model").val(),
         category_id: +$("#category_id").val(),

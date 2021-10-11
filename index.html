@@ -8,11 +8,55 @@
   <script type="text/javascript" src="JS/message/consultarMessage.js"></script>
   <script type="text/javascript" src="JS/message/guardarMessage.js"></script>
   <script type="text/javascript" src="JS/message/eliminarMessage.js"></script>
+  <script type="text/javascript" src="JS/computer/consultarComputador.js"></script>
+  <script type="text/javascript" src="JS/computer/guardarComputador.js"></script>
+  <script type="text/javascript" src="JS/computer/eliminarComputador.js"></script>
   <title>Reto 2 Misión TIC USA</title>
 </head>
 <body>
   <div id="form-computer">
+    <h1>Computadores</h1>
 
+        <h4>Registra un nuevo dispositivo</h4>
+        <table border="1">
+
+            <tr>
+                <td>
+                ID <input type="number" id="id_com" /> <br/>
+                </td>
+            </tr>
+
+            <tr>
+                <td>
+                Brand <input type="text" id="brand" /> <br/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                Model <input type="number" id="model" /> <br/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                Category_ID <input type="number" id="category_id" /> <br/>
+                </td>
+            </tr>
+            
+            <tr>
+                <td>
+                Name <input type="text" id="name" /> <br/>
+                </td>
+            </tr>
+        </table>  
+        <br>
+        <button onclick="guardar()">Guardar computador</button>
+
+        <h4>Dispositivos Registrados</h4> 
+        <button onclick="consultar()">Consultar Datos</button>
+
+        <div id="tabla"> </div>
   </div>
 
   <div id="form-client">
