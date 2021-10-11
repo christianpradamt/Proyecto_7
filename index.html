@@ -5,17 +5,46 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-  <title>Reto 2</title>
+  <script type="text/javascript" src="JS/message/consultarMessage.js"></script>
+  <script type="text/javascript" src="JS/message/guardarMessage.js"></script>
+  <script type="text/javascript" src="JS/message/eliminarMessage.js"></script>
+  <title>Reto 2 Misión TIC USA</title>
 </head>
 <body>
   <div id="form-computer">
 
   </div>
+
   <div id="form-client">
 
   </div>
-  <div id="form-message">
 
+  <div id="form-message">
+    <h1>Agrega un mensaje</h1>
+    <p>
+        Registra un nuevo mensaje:
+    </p>
+    <table border="1">
+        <tr>
+            <td>
+                <label>ID: </label>
+                <input id="id" type="text"/>
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <label>MESSAGETEXT: </label>
+                <input id="messagetext" type="text"/>
+            </td>
+        </tr>
+    </table>  
+    <button onclick="guardarMensaje()">Guardar un mensaje</button>
+    <br>
+    <br>
+    <button onclick = "consultarMessage()">Consultar mensajes</button>
+    <div id="tablaMessage">
+    </div>
   </div>
+
 </body>
 </html>
