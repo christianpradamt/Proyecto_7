@@ -15,90 +15,96 @@
   <script type="text/javascript" src="JS/client/consultar.js"></script>
   <script type="text/javascript" src="JS/client/guardar.js"></script>
   <script type="text/javascript" src="JS/client/eliminar.js"></script>
+  <link rel="stylesheet" href="CSS/style.css">
   <title>Reto 2 Misión TIC USA</title>
 </head>
 
 <body>
-  <div id="form-computer">
-    <h1>Computadores</h1>
-      <h4>Registra un nuevo dispositivo</h4>
-      <table border="1">
-        <tr>
-          <td>
-            ID <input type="number" id="id_com"/><br/>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Brand <input type="text" id="brand_com"/><br/>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Model <input type="number" id="model_com"/><br/>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Category_ID <input type="number" id="category_id"/><br/>
-          </td>
-        </tr>
-        <tr>
-          <td>
-            Name <input type="text" id="name_com"/><br/>
-          </td>
-        </tr>
-      </table>  
+  <div class="container">
+    <div id="form-computer" class="container__div">
+      <h2>Computadores</h2>
+        <h4>Registra un nuevo dispositivo</h4>
+        <table border="1">
+          <tr>
+            <td>
+              ID <input type="number" id="id_com"/><br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Brand <input type="text" id="brand_com"/><br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Model <input type="number" id="model_com"/><br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Category_ID <input type="number" id="category_id"/><br/>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              Name <input type="text" id="name_com"/><br/>
+            </td>
+          </tr>
+        </table>  
+        <br>
+        <button onclick="guardar()">Guardar computador</button>
+      <h4>Dispositivos Registrados</h4> 
+      <button onclick="consultarComputer()">Consultar Datos</button>
+      <div id="tabla-computer"></div>
+    </div>
+  
+    <div id="form-client" class="container__div">
+      <h2>Registro de Clientes:</h2>
       <br>
-      <button onclick="guardar()">Guardar computador</button>
-    <h4>Dispositivos Registrados</h4> 
-    <button onclick="consultarComputer()">Consultar Datos</button>
-    <div id="tabla-computer"></div>
+      <h4>Registra un cliente</h4>
+      <label for="id-client">ID</label>
+      <input type="number" id="id-client">
+      <label for="name-client">NAME</label>
+      <input type="text" id="name-client">
+      <label for="email-client">EMAIL</label>
+      <input type="text" id="email-client">
+      <label for="age-client">AGE</label>
+      <input type="number" id="age-client">
+      <button onclick="guardarCliente()">Guardar</button>
+      <br>
+      <br>
+  
+      <h4>Clientes Registrados:</h4>
+      <button onclick="consultarClient()">Consultar Datos</button>
+      <div id="tabla-client"></div>
+    </div>
+  
+    <div id="form-message" class="container__div">
+      <h2>Agrega un mensaje</h2>
+      <h4>
+          Registra un nuevo mensaje:
+      </h4>
+      <table border="1">
+          <tr>
+              <td>
+                  <label>ID: </label>
+                  <input id="id" type="text"/>
+              </td>
+          </tr>
+          <tr>
+              <td>
+                  <label>MESSAGETEXT: </label>
+                  <input id="messagetext" type="text"/>
+              </td>
+          </tr>
+      </table>  
+      <button onclick="guardarMensaje()">Guardar un mensaje</button>
+      <br>
+      <br>
+      <button onclick = "consultarMessage()">Consultar mensajes</button>
+      <div id="tabla-message"></div>
+    </div>
   </div>
-
-  <div id="form-client">
-    <h2>Registro de Clientes:</h2>
-    <br>
-    <h4>Registra un cliente</h4>
-    ID <input type="number" id="id-client"> <br/>
-    NAME <input type="text" id="name-client"> <br/>
-    EMAIL <input type="text" id="email-client"> <br/>
-    AGE <input type="number" id="age-client"> <br/>
-    <button onclick="guardarCliente()">Guardar</button>
-    <br>
-    <br>
-
-    <h4>Clientes Registrados:</h4>
-    <button onclick="consultarClient()">Consultar Datos</button>
-    <div id="tabla-client"></div>
-  </div>
-
-  <div id="form-message">
-    <h1>Agrega un mensaje</h1>
-    <p>
-        Registra un nuevo mensaje:
-    </p>
-    <table border="1">
-        <tr>
-            <td>
-                <label>ID: </label>
-                <input id="id" type="text"/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>MESSAGETEXT: </label>
-                <input id="messagetext" type="text"/>
-            </td>
-        </tr>
-    </table>  
-    <button onclick="guardarMensaje()">Guardar un mensaje</button>
-    <br>
-    <br>
-    <button onclick = "consultarMessage()">Consultar mensajes</button>
-    <div id="tabla-message"></div>
-  </div>
-
 </body>
 
 </html>

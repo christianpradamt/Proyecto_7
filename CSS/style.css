@@ -1,1 +1,59 @@
-Prueba rama christian_branch
+:root {
+  box-sizing: border-box;
+  font-size: calc(1vw + 0.3em);
+}
+
+*,
+::before,
+::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background-color: #dbf6d9;
+}
+
+label {
+  display: block;
+}
+
+input {
+  display: block;
+}
+
+h2 {
+  margin: 0;
+}
+
+h4 {
+  margin: 0;
+}
+
+.container {
+  background-color: brown;
+  padding: 2em;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.container__div {
+  align-self: center;
+  width: 50vw;
+  height: auto;
+  justify-content: center;
+  padding: 1.5em;
+}
+
+#form-computer {
+  background-color: blue;
+}
+
+#form-client {
+  background-color: red;
+}
+
+#form-message {
+  background-color: blueviolet;
+}
