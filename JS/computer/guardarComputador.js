@@ -3,10 +3,10 @@ function guardar(){
 
     let computador = {
         id: +$("#id_com").val(),
-        brand: $("#brand").val(),
-        model: +$("#model").val(),
+        brand: $("#brand_com").val(),
+        model: +$("#model_com").val(),
         category_id: +$("#category_id").val(),
-        name: $("#name").val()
+        name: $("#name_com").val()
     };
 
     console.log(computador);

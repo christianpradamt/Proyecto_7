@@ -27,14 +27,14 @@ function mostrarRespuesta(items){
     
     for (var i=0; i < items.length; i++) {
         tabla +=`<tr>
-                   <td>${items[i].id_com}</td>
+                   <td>${items[i].id}</td>
                    <td>${items[i].brand}</td>
                    <td>${items[i].model}</td>
                    <td>${items[i].category_id}</td>
                    <td>${items[i].name}</td>
                    <td>
-                        <button onclick="eliminar(${items[i].id_com})">Eliminar</button>
-                        <a href="detalleComputador.html?id=${items[i].id_com}">Editar</a>
+                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
+                        <a href="detalleComputador.html?id=${items[i].id}">Editar</a>
                    </td> 
                 </tr>`;
     }

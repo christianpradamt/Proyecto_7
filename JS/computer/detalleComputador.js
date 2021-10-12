@@ -28,11 +28,11 @@ function consultarById(id){
 }
 
 function llenarDatos(item){
-    $("#id").val(item.id);
-    $("#brand").val(item.brand);
-    $("#model").val(item.model);
+    $("#id_com").val(item.id);
+    $("#brand_com").val(item.brand);
+    $("#model_com").val(item.model);
     $("#category_id").val(item.category_id);
-    $("#name").val(item.name);
+    $("#name_com").val(item.name);
 }
 
 
