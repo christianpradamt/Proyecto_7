@@ -14,14 +14,14 @@ function consultarComputer(){
 }
 
 function mostrarRespuestaComputer(items){
-    let tabla = `<h3>Tabla Computadores</h3><table border="1">
+    let tabla = `<h3>Computers TABLE</h3><table border="1">
                   <tr>
                     <th>ID</th>
                     <th>BRAND</th>
                     <th>MODEL</th>
                     <th>CATEGORY_ID</th>
                     <th>NAME</th>
-                    <th>ACCIONES</th>
+                    <th>ACTIONS</th>
                   </tr>`;
                   
     

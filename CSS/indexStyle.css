@@ -34,6 +34,7 @@ h4 {
 
 table {
   width: 15vw;
+  border-color: black;
 }
 
 button {
@@ -41,7 +42,7 @@ button {
 }
 
 .container {
-  background-color: brown;
+  background-color: #c7fabb;
   padding: 2em;
   display: flex;
   justify-content: center;
@@ -49,12 +50,13 @@ button {
 }
 
 .container__div {
-  width: 40vw;
+  width: 45vw;
   height: auto;
   padding: 1.5em;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 1fr 0.5fr auto auto auto;
+  border-radius: 25px;
 }
 
 .container__div--title {
@@ -83,6 +85,13 @@ button {
   align-self: center;
   justify-self: center;
   border-radius: 15px;
+  border: none;
+  background-color: #ff8376;
+  cursor: pointer;
+}
+
+.button__save:hover {
+  background-color: #fa3636;
 }
 
 .button__check {
@@ -93,6 +102,13 @@ button {
   align-self: center;
   justify-self: center;
   border-radius: 15px;
+  border: none;
+  background-color: #ff8376;
+  cursor: pointer;
+}
+
+.button__check:hover {
+  background-color: #fa3636;
 }
 
 .container__div--database {
@@ -102,15 +118,17 @@ button {
 
 #form-computer {
   align-self: center;
-  background-color: blue;
+  background-color: #8dff87;
+  margin-bottom: 1em;
 }
 
 #form-client {
   align-self: center;
-  background-color: red;
+  background-color: #7de3ad;
+  margin-bottom: 1em;
 }
 
 #form-message {
   align-self: center;
-  background-color: blueviolet;
+  background-color: #97faf8;
 }
