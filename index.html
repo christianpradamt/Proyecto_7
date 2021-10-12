@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,8 +12,12 @@
   <script type="text/javascript" src="JS/computer/consultarComputador.js"></script>
   <script type="text/javascript" src="JS/computer/guardarComputador.js"></script>
   <script type="text/javascript" src="JS/computer/eliminarComputador.js"></script>
+  <script type="text/javascript" src="JS/client/consultar.js"></script>
+  <script type="text/javascript" src="JS/client/guardar.js"></script>
+  <script type="text/javascript" src="JS/client/eliminar.js"></script>
   <title>Reto 2 Misión TIC USA</title>
 </head>
+
 <body>
   <div id="form-computer">
     <h1>Computadores</h1>
@@ -56,6 +61,20 @@
   </div>
 
   <div id="form-client">
+    <h2>Registro de Clientes:</h2>
+    <br>
+    <h4>Registra un cliente</h4>
+    ID <input type="number" id="id-client"> <br/>
+    NAME <input type="text" id="name-client"> <br/>
+    EMAIL <input type="text" id="email-client"> <br/>
+    AGE <input type="number" id="age-client"> <br/>
+    <button onclick="guardarCliente()">Guardar</button>
+    <br>
+    <br>
+
+    <h4>Clientes Registrados:</h4>
+    <button onclick="consultarClientes()">Consultar Datos</button>
+    <div id="tabla"></div>
 
   </div>
 
@@ -87,4 +106,5 @@
   </div>
 
 </body>
+
 </html>
