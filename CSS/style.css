@@ -12,6 +12,7 @@
 body {
   margin: 0;
   background-color: #dbf6d9;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
 }
 
 label {
@@ -35,6 +36,10 @@ table {
   width: 15vw;
 }
 
+button {
+  display: block;
+}
+
 .container {
   background-color: brown;
   padding: 2em;
@@ -44,21 +49,68 @@ table {
 }
 
 .container__div {
-  align-self: center;
-  width: 50vw;
+  width: 40vw;
   height: auto;
-  justify-content: center;
   padding: 1.5em;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 1fr 0.5fr auto auto auto;
+}
+
+.container__div--title {
+  grid-row: 1 / 2;
+  grid-column: 1 / 3;
+  padding-bottom: 1em;
+  display: flex;
+  justify-content: center;
+}
+
+.container__div--subtitle {
+  grid-row: 2 / 3;
+  grid-column: 1 / 2;
+}
+
+.container__div--table {
+  grid-row: 3 / 5;
+  grid-column: 1 / 2;
+}
+
+.button__save {
+  grid-row: 3 / 4;
+  grid-column: 2 / 3;
+  width: 18vw;
+  height: 6vh;
+  align-self: center;
+  justify-self: center;
+  border-radius: 15px;
+}
+
+.button__check {
+  grid-row: 4 / 5;
+  grid-column: 2 / 3;
+  width: 18vw;
+  height: 6vh;
+  align-self: center;
+  justify-self: center;
+  border-radius: 15px;
+}
+
+.container__div--database {
+  grid-row: 5 / 6;
+  grid-column: 1 / 3;
 }
 
 #form-computer {
+  align-self: center;
   background-color: blue;
 }
 
 #form-client {
+  align-self: center;
   background-color: red;
 }
 
 #form-message {
+  align-self: center;
   background-color: blueviolet;
 }

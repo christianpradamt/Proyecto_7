@@ -22,9 +22,9 @@
 <body>
   <div class="container">
     <div id="form-computer" class="container__div">
-      <h2>Computer</h2>
-      <h4>Register a new Computer</h4>
-      <table border="1">
+      <h2 class="container__div--title">Computer</h2>
+      <h4 class="container__div--subtitle">Register a new Computer</h4>
+      <table border="1" class="container__div--table">
         <tr>
           <td>
             <label for="id_com">ID</label>
@@ -56,16 +56,15 @@
           </td>
         </tr>
       </table>
-      <h4>Data Base</h4> 
-      <button onclick="guardar()">SAVE</button>
-      <button onclick="consultarComputer()">CHECK</button>
-      <div id="tabla-computer"></div>
+      <button onclick="guardar()" class="button__save">SAVE COMPUTER</button>
+      <button onclick="consultarComputer()" class="button__check">CHECK DATA BASE</button>
+      <div id="tabla-computer" class="container__div--database"></div>
     </div>
   
     <div id="form-client" class="container__div">
-      <h2>Client</h2>
-      <h4>Register a new Client</h4>
-      <table border="1">
+      <h2 class="container__div--title">Client</h2>
+      <h4 class="container__div--subtitle">Register a new Client</h4>
+      <table border="1" class="container__div--table">
         <tr>
           <td>
             <label for="id-client">ID</label>
@@ -91,16 +90,15 @@
           </td>
         </tr>
       </table>
-      <h4>Data Base</h4>
-      <button onclick="guardarCliente()">SAVE</button>
-      <button onclick="consultarClient()">CHECK</button>
-      <div id="tabla-client"></div>
+      <button onclick="guardarCliente()" class="button__save">SAVE</button>
+      <button onclick="consultarClient()" class="button__check">CHECK</button>
+      <div id="tabla-client" class="container__div--database"></div>
     </div>
   
     <div id="form-message" class="container__div">
-      <h2>Message</h2>
-      <h4>Register a new Message</h4>
-      <table border="1">
+      <h2 class="container__div--title">Message</h2>
+      <h4 class="container__div--subtitle">Register a new Message</h4>
+      <table border="1" class="container__div--table">
         <tr>
           <td>
             <label>ID: </label>
@@ -114,9 +112,9 @@
           </td>
         </tr>
       </table>  
-      <button onclick="guardarMensaje()">SAVE</button>
-      <button onclick = "consultarMessage()">CHECK</button>
-      <div id="tabla-message"></div>
+      <button onclick="guardarMensaje()" class="button__save">SAVE</button>
+      <button onclick = "consultarMessage()" class="button__check">CHECK</button>
+      <div id="tabla-message" class="container__div--database"></div>
     </div>
   </div>
 </body>
