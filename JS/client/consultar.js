@@ -1,11 +1,11 @@
-function consultarClientes(){
+function consultarClient(){
     $.ajax({
         url: "https://g1d69904e0a312d-computer.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/client/client",
         type: 'GET',
         dataType: 'json',
         success: function(respuesta){
             console.log(respuesta.items);
-            mostrarRespuesta(respuesta.items);
+            mostrarRespuestaClient(respuesta.items);
         },
         error: function (xhr, status) {
             alert('ha sucedido un problema');
@@ -13,7 +13,7 @@ function consultarClientes(){
     });
 }
 
-function mostrarRespuesta(items){
+function mostrarRespuestaClient(items){
     var tabla = `<table border="1">
                   <tr>
                     <th>ID</th>
@@ -38,5 +38,5 @@ function mostrarRespuesta(items){
     }
     tabla +=`</table>`;
 
-    $("#tabla").html(tabla);
+    $("#tabla-client").html(tabla);
 }

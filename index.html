@@ -21,43 +21,39 @@
 <body>
   <div id="form-computer">
     <h1>Computadores</h1>
-
-        <h4>Registra un nuevo dispositivo</h4>
-        <table border="1">
-
-            <tr>
-                <td>
-                ID <input type="number" id="id_com"/><br/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Brand <input type="text" id="brand_com"/><br/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Model <input type="number" id="model_com"/><br/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Category_ID <input type="number" id="category_id"/><br/>
-                </td>
-            </tr>
-            <tr>
-                <td>
-                Name <input type="text" id="name_com"/><br/>
-                </td>
-            </tr>
-        </table>  
-        <br>
-        <button onclick="guardar()">Guardar computador</button>
-
-        <h4>Dispositivos Registrados</h4> 
-        <button onclick="consultar()">Consultar Datos</button>
-
-        <div id="tabla"> </div>
+      <h4>Registra un nuevo dispositivo</h4>
+      <table border="1">
+        <tr>
+          <td>
+            ID <input type="number" id="id_com"/><br/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Brand <input type="text" id="brand_com"/><br/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Model <input type="number" id="model_com"/><br/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Category_ID <input type="number" id="category_id"/><br/>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            Name <input type="text" id="name_com"/><br/>
+          </td>
+        </tr>
+      </table>  
+      <br>
+      <button onclick="guardar()">Guardar computador</button>
+    <h4>Dispositivos Registrados</h4> 
+    <button onclick="consultarComputer()">Consultar Datos</button>
+    <div id="tabla-computer"></div>
   </div>
 
   <div id="form-client">
@@ -73,9 +69,8 @@
     <br>
 
     <h4>Clientes Registrados:</h4>
-    <button onclick="consultarClientes()">Consultar Datos</button>
-    <div id="tabla"></div>
-
+    <button onclick="consultarClient()">Consultar Datos</button>
+    <div id="tabla-client"></div>
   </div>
 
   <div id="form-message">
@@ -101,8 +96,7 @@
     <br>
     <br>
     <button onclick = "consultarMessage()">Consultar mensajes</button>
-    <div id="tablaMessage">
-    </div>
+    <div id="tabla-message"></div>
   </div>
 
 </body>

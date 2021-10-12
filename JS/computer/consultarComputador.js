@@ -1,11 +1,11 @@
-function consultar(){
+function consultarComputer(){
     $.ajax({
         url: "https://g6f2d96fab458ab-ciclo3.adb.us-ashburn-1.oraclecloudapps.com/ords/admin/computer/computer",
         type: 'GET',
         dataType: 'json',
         success: function(respuesta){
             console.log(respuesta.items);
-            mostrarRespuesta(respuesta.items);
+            mostrarRespuestaComputer(respuesta.items);
         },
         error: function (xhr, status) {
             alert('Ha sucedido un problema');
@@ -13,8 +13,8 @@ function consultar(){
     });
 }
 
-function mostrarRespuesta(items){
-    var tabla = `<h3>Tabla Computadores</h3><table border="1">
+function mostrarRespuestaComputer(items){
+    let tabla = `<h3>Tabla Computadores</h3><table border="1">
                   <tr>
                     <th>ID</th>
                     <th>BRAND</th>
@@ -25,7 +25,7 @@ function mostrarRespuesta(items){
                   </tr>`;
                   
     
-    for (var i=0; i < items.length; i++) {
+    for (let i=0; i < items.length; i++) {
         tabla +=`<tr>
                    <td>${items[i].id}</td>
                    <td>${items[i].brand}</td>
@@ -40,6 +40,6 @@ function mostrarRespuesta(items){
     }
     tabla +=`</table>`;
 
-    $("#tabla").html(tabla);
+    $("#tabla-computer").html(tabla);
 }
 

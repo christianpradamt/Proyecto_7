@@ -6,7 +6,7 @@ function consultarMessage(){
         dataType: 'json',
         success: function(respuesta){
             console.log(respuesta.items);
-            mostrarRespuesta(respuesta.items);
+            mostrarRespuestaMessage(respuesta.items);
         },
         error: function (xhr, status) {
             alert('ha sucedido un problema');
@@ -19,7 +19,7 @@ function consultarMessage(){
 
 }
 
-function mostrarRespuesta(items){
+function mostrarRespuestaMessage(items){
     var tabla = `<h3>Tabla Mensajes</h3><table border="1">
                   <tr>
                     <th>ID</th>
@@ -40,5 +40,5 @@ function mostrarRespuesta(items){
     }
     tabla +=`</table>`;
 
-    $("#tablaMessage").html(tabla);
+    $("#tabla-message").html(tabla);
 }
