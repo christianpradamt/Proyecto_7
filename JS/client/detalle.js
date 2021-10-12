@@ -28,8 +28,8 @@ function consultarById(id){
 }
 
 function llenarDatos(item){
-    $("#id").val(item.id);
-    $("#name").val(item.name);
-    $("#email").val(item.email);
-    $("#age").val(item.age);
+    $("#id-client").val(item.id);
+    $("#name-client").val(item.name);
+    $("#email-client").val(item.email);
+    $("#age-client").val(item.age);
 }

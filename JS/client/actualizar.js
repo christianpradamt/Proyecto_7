@@ -2,10 +2,10 @@ function actualizarCliente(){
     console.log("ejecutando funcion para guardar");
 
     let client = {
-        id: +$("#id").val(),
-        name: $("#name").val(),
-        email: $("#email").val(),
-        age: +$("#age").val()
+        id: +$("#id-client").val(),
+        name: $("#name-client").val(),
+        email: $("#email-client").val(),
+        age: +$("#age-client").val()
     };
 
     console.log(client);
