@@ -17,11 +17,12 @@ body {
 
 label {
   display: block;
+  padding: 0.2em;
 }
 
 input {
   display: block;
-  width: 15vw;
+  width: 18vw;
 }
 
 h2 {
@@ -33,12 +34,25 @@ h4 {
 }
 
 table {
-  width: 15vw;
   border-color: black;
 }
 
 button {
   display: block;
+}
+
+a {
+  text-decoration: none;
+  color: #ff8376;
+  padding: 0.1em 1.2em;
+}
+
+a:hover {
+  color: #fa3636;
+}
+
+td {
+  padding: 0.2em;
 }
 
 .container {
@@ -75,6 +89,7 @@ button {
 .container__div--table {
   grid-row: 3 / 5;
   grid-column: 1 / 2;
+  width: 18vw;
 }
 
 .button__save {
@@ -108,6 +123,18 @@ button {
 }
 
 .button__check:hover {
+  background-color: #fa3636;
+}
+
+.button__delete {
+  background-color: #ff8376;
+  cursor: pointer;
+  border: none;
+  width: 100%;
+  border-radius: 5px;
+}
+
+.button__delete:hover {
   background-color: #fa3636;
 }
 

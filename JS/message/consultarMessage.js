@@ -20,21 +20,21 @@ function consultarMessage(){
 }
 
 function mostrarRespuestaMessage(items){
-    var tabla = `<h3>Tabla Mensajes</h3><table border="1">
+    let tabla = `<h3>Message Table</h3><table border="1">
                   <tr>
                     <th>ID</th>
                     <th>MESSAGETEXT</th>
-                    <th>ACCIONES</th>
+                    <th>ACTIONS</th>
                   </tr>`;
                   
     
-    for (var i=0; i < items.length; i++) {
+    for (let i=0; i < items.length; i++) {
         tabla +=`<tr>
                    <td>${items[i].id}</td>
                    <td>${items[i].messagetext}</td>
                    <td>
-                    <button onclick="eliminar(${items[i].id})">Eliminar</button>
-                    <a href="detalleMessage.html?id=${items[i].id}">Editar</a>
+                    <button onclick="eliminar(${items[i].id})" class="button__delete">DELETE</button>
+                    <a href="detalleMessage.html?id=${items[i].id}">EDIT</a>
                    </td> 
                    </tr>`;
     }

@@ -14,7 +14,7 @@ function consultarComputer(){
 }
 
 function mostrarRespuestaComputer(items){
-    let tabla = `<h3>Computers TABLE</h3><table border="1">
+    let tabla = `<h3>Computer Table</h3><table border="1">
                   <tr>
                     <th>ID</th>
                     <th>BRAND</th>
@@ -32,9 +32,9 @@ function mostrarRespuestaComputer(items){
                    <td>${items[i].model}</td>
                    <td>${items[i].category_id}</td>
                    <td>${items[i].name}</td>
-                   <td>
-                        <button onclick="eliminar(${items[i].id})">Eliminar</button>
-                        <a href="detalleComputador.html?id=${items[i].id}">Editar</a>
+                   <td class="table__actions">
+                        <button onclick="eliminar(${items[i].id})" class="button__delete">DELETE</button>
+                        <a href="detalleComputador.html?id=${items[i].id}">EDIT</a>
                    </td> 
                 </tr>`;
     }

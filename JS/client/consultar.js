@@ -14,25 +14,25 @@ function consultarClient(){
 }
 
 function mostrarRespuestaClient(items){
-    var tabla = `<table border="1">
+    let tabla = `<h3>Client Table</h3><table border="1">
                   <tr>
                     <th>ID</th>
                     <th>NAME</th>
                     <th>EMAIL</th>
                     <th>AGE</th>
-                    <th>ACCIONES</th>
+                    <th>ACTIONS</th>
                   </tr>`;
                   
     
-    for (var i=0; i < items.length; i++) {
+    for (let i=0; i < items.length; i++) {
         tabla +=`<tr>
                    <td>${items[i].id}</td>
                    <td>${items[i].name}</td>
                    <td>${items[i].email}</td>
                    <td>${items[i].age}</td>
                    <td>
-                   <button onclick="eliminarCliente(${items[i].id})">Eliminar</button>
-                   <a href="detalle.html?id=${items[i].id}">Editar</a>
+                   <button onclick="eliminarCliente(${items[i].id})" class="button__delete">DELETE</button>
+                   <a href="detalle.html?id=${items[i].id}">EDIT</a>
                    </td> 
                    </tr>`;
     }
