@@ -3,16 +3,42 @@
         <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
         <script type="text/javascript" src="JS/client/detalle.js"></script>
         <script type="text/javascript" src="JS/client/actualizar.js"></script>
+        <link rel="stylesheet" href="CSS/detailStyle.css">
+        <title>Client Details</title>
     </head>
-    <body>
-        <h1>Detalle de Cliente</h1>
-        ID <input type="number" id="id-client" disabled /> <br/>
-        Name <input type="text" id="name-client" /> <br/>
-        Email <input type="text" id="email-client" /> <br/>
-        Age <input type="number" id="age-client" /> <br/>
-        <button id="boton" onclick="actualizarCliente()">Actualizar</button>
-
-        <br/><br/><br/>
-        <a href="index.html">Ir al Inicio</a>
+    <body class="container">
+        <div class="container__div" id="container-client">
+            <h2 class="container__div--title">Client Details</h2>
+            <table border="1" class="container__div--table">
+                <tr>
+                    <td>
+                        <label for="id-client">ID</label>
+                        <input type="number" id="id-client" disabled/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="name-client">NAME</label>
+                        <input type="text" id="name-client"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="email-client">EMAIL</label>
+                        <input type="text" id="email-client"/>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label for="age-client">AGE</label>
+                        <input type="number" id="age-client"/>
+                    </td>
+                </tr>
+            </table>
+            <div class="container__div--buttons">
+                <button id="boton" onclick="actualizarCliente()" class="button__update">UPDATE</button>
+                <a href="index.html">HOME</a>
+            </div>
+        </div>
     </body>
 </html>

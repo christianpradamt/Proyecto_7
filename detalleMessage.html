@@ -5,29 +5,30 @@
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="JS\message\actualizarMessage.js"></script>
     <script type="text/javascript" src="JS\message\detalleMessage.js"></script>
-    <title>Document</title>
+    <link rel="stylesheet" href="CSS/detailStyle.css">
+    <title>Message Details</title>
 </head>
-<body>
-    <h1>Edita un mensaje</h1>
-    <table border="1">
-        <tr>
-            <td>
-                <label>ID: </label>
-                <input id="id" type="text" disabled/>
-            </td>
-        </tr>
-        <tr>
-            <td>
-                <label>MESSAGETEXT: </label>
-                <input id="messagetext" type="text"/>
-            </td>
-        </tr>
-    </table>
-    <button id="boton" onclick="actualizarMessage()">Actualizar</button>
-
-    <br><br><br>
-
-    <a href="index.html">Ir al inicio</a>
-</body>
+<body class="container">
+    <div class="container__div" id="container-message">
+        <h2 class="container__div--title">Message Details</h2>
+        <table border="1" class="container__div--table">
+            <tr>
+                <td>
+                    <label for="id">ID</label>
+                    <input id="id" type="text" disabled/>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <label for="messagetext">MESSAGETEXT</label>
+                    <input id="messagetext" type="text"/>
+                </td>
+            </tr>
+        </table>
+        <div class="container__div--buttons">
+            <button id="boton" onclick="actualizarMessage()" class="button__update">UPDATE</button>
+            <a href="index.html">HOME</a>
+        </div>
+    </div>
 </body>
 </html>
